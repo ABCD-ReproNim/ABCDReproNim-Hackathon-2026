@@ -19,6 +19,161 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/index.css" />
 
+	<!-- Custom styling for ABCD-ReproNim title -->
+	<style>
+		/* Top navigation styling */
+		.topnav {
+			background-color: #151830;
+			border-bottom: 3px solid white;
+			box-shadow: 0 3px 0 0 white;
+		}
+		.topnav a {
+			color: white;
+		}
+		.topnav a:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+			color: white;
+		}
+		.topnav a.active {
+			background-color: rgba(255, 255, 255, 0.2);
+			color: white;
+		}
+		
+		/* Why Hack section styling */
+		.content.dark.style1.featured {
+			background-color: #151830;
+			background-image: none;
+		}
+		
+		/* Project Pitches section styling */
+		.content.dark.style2 {
+			background-color: #151830;
+			background-image: none;
+		}
+		
+		/* Schedule tables styling */
+		.schedule-container {
+			background-color: #494d7b;
+			padding: 2em;
+			border-radius: 8px;
+			margin-top: 1em;
+		}
+		.schedule-container table {
+			border-color: white;
+		}
+		.schedule-container th,
+		.schedule-container td {
+			color: white;
+			border-color: white;
+		}
+		.schedule-container thead {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+		.schedule-container th {
+			background-color: rgba(255, 255, 255, 0.25);
+			color: white;
+			font-weight: bold;
+			padding: 0.8em;
+			text-align: center;
+		}
+		.schedule-container th {
+			background-color: rgba(255, 255, 255, 0.25);
+			color: white;
+			font-weight: bold;
+			padding: 0.8em;
+			text-align: center;
+		}
+		
+		/* Contact Us section styling */
+		#footer.main {
+			background-image: url('images/abcd-repronim.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			background-color: transparent;
+		}
+		#footer.main::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.6);
+			z-index: 1;
+		}
+		#footer.main header {
+			position: relative;
+			z-index: 2;
+			background: transparent;
+		}
+		#footer.main .container {
+			position: relative;
+			z-index: 2;
+			background: transparent;
+		}
+		#footer.main h2,
+		#footer.main .icons li,
+		#footer.main .icons a,
+		#footer.main .copyright,
+		#footer.main .copyright ul,
+		#footer.main .copyright li {
+			color: white;
+			background: transparent;
+		}
+		
+		.abcd-title-section {
+			background-image: url('images/abcd-repronim.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative; 
+			padding: 4em 0;
+			margin-top: -2em;
+			padding-top: 6em;
+			width: 100vw;
+			margin-left: calc(-50vw + 50%);
+		}
+		.abcd-title-section::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+		.abcd-title-content {
+			position: relative;
+			z-index: 2;
+			color: white;
+			text-align: center;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 2em;
+		}
+		.abcd-title-content h2 {
+			color: white;
+			font-size: 2.5em;
+			margin-bottom: 0.5em;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		}
+		/* Remove margin from the main section to connect with topnav */
+		#info.main {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+		#info.main header {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+		#info.main .container {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+	</style>
 
 	<!-- Full Calender -->
 	<link href='assets/js/fullcalendar/packages/core/main.css' rel='stylesheet' />
@@ -71,7 +226,7 @@
 	<div class="topnav" id="myTopnav">
 		<a href="#info">ABCD-ReproNim Hackathon 2025</a>
 		<!-- <a href="https://brainhack.org/global2023/">Brainhack Global 2023</a> -->
-		<a href="https://flux.societyconference.com/v2/?m=conf&route=reg-now&conf_id=10002&reg_method=indiv_reg"><b>Register</b></a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeXC1A7RFEgUq4hG106cA-IaKNpsvd4P0BQ-tEwSEsyuyATPw/viewform?usp=sharing&ouid=115636153886598447704"><b>Apply Now</b></a>
 		<a href="#schedule">Program & Schedule</a>
 		<!-- ><a href="#calendar">Schedule</a> -->
 		<!-- <a href="#workshop">Workshops</a> -->
@@ -123,8 +278,12 @@
 				</p> -->
 
 				</br>
+				<div class="abcd-title-section">
+					<div class="abcd-title-content">
+						<h2><b>ABCD-ReproNim Hackathon 2025</b></h2>
+					</div>
+				</div>
 				<div>
-					<h2><b>ABCD-ReproNim Hackathon 2025</b></h2>
 					<p>
 					ABCD-ReproNim is pleased to announce a 4-day hackathon on January 20-23, 2026 in Hollywood, Florida. The ABCD-ReproNim Hackathon was designed to promote collaborative analyses of ABCD data using reproducible and responsible methods.  ABCD-ReproNim aims to equip researchers with the tools to improve their data science and computational method repertoire. The ABCD-ReproNim Hackathon will allow attendees to have open time to work in interdisciplinary teams on projects that utilize computational techniques to solve problems of interest to the broader ABCD community.
 					</p>
@@ -319,6 +478,7 @@
 
 				<div style="padding: 1em 0 2em 0">
 				<h3 style="margin-top: 1em; margin-bottom: 1em;">Schedule</h3>
+				  <div class="schedule-container">
 				  <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; text-align: left;">
 				    <colgroup>
 				      <col style="width: 15%;">
@@ -326,7 +486,7 @@
 				      <col style="width: 15%;">
 				      <col style="width: 35%;">
 				    </colgroup>
-				    <thead style="background-color: #f2f2f2; font-weight: bold;">
+				    <thead style="font-weight: bold;">
 				      <tr>
 				        <th>Time</th>
 				        <th>Monday, January 20</th>
@@ -411,7 +571,7 @@
 				      <col style="width: 15%;">
 				      <col style="width: 35%;">
 				    </colgroup>
-				    <thead style="background-color: #f2f2f2; font-weight: bold;">
+				    <thead style="font-weight: bold;">
 				      <tr>
 				        <th>Time</th>
 				        <th>Wednesday, January 22</th>
@@ -488,6 +648,7 @@
 				      </tr>
 				    </tbody>
 				  </table>
+				  </div>
 				</div>
 
 
