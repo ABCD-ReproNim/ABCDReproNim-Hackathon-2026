@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>ABCD-ReproNim Hackathon 2025</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/index.css" />
+
+
+	<!-- Full Calender -->
+	<link href='assets/js/fullcalendar/packages/core/main.css' rel='stylesheet' />
+	<link href='assets/js/fullcalendar/packages/list/main.css' rel='stylesheet' />
+
+	<script src='assets/js/fullcalendar/packages/core/main.js'></script>
+	<script src='assets/js/fullcalendar/packages/list/main.js'></script>
+	<script src="assets/js/jquery.min.js"></script>
+
+
+	<!-- Script for calendar -->
+	<script>
+		// Get JSON callsback addDocument...
+		document.addEventListener('DOMContentLoaded', addDocument)
+		function addDocument() {
+			$.getJSON("assets/data/calendar.json", function (data) {
+				console.log(data)
+				var calendarEl = document.getElementById('calendar');
+				var calendar = new FullCalendar.Calendar(calendarEl, {
+					plugins: ['list'],
+					defaultView: 'listWeek',
+					validRange: {
+						start: "2025-09-01",
+						end: "2025-09-02"
+					},
+					events: data
+				});
+				calendar.render();
+			});
+		}
+	</script>
+
+	<!-- Script for responsive banner -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+
+</head>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="#info">ABCD-ReproNim Hackathon 2025</a>
+		<!-- <a href="https://brainhack.org/global2023/">Brainhack Global 2023</a> -->
+		<a href="https://flux.societyconference.com/v2/?m=conf&route=reg-now&conf_id=10002&reg_method=indiv_reg"><b>Register</b></a>
+		<a href="#schedule">Program & Schedule</a>
+		<!-- ><a href="#calendar">Schedule</a> -->
+		<!-- <a href="#workshop">Workshops</a> -->
+		<!-- <a href="#panel">Panel Discussion</a> -->
+		<a href="#projects">Projects</a>
+		<a href="#team">Our team</a>
+		<!-- <a href="#hotel_info">Nearby Hotels</a> -->
+		<!-- <a href="#sponsors">Sponsors</a> -->
+		<a href="#footer">Contact us</a>
+		<a href="https://github.com/chlohamp/FLUXHack-092025"><i class="icon fa-github"></i></a>
+		<!-- <a href="https://twitter.com/brainhackto"><i class="icon fa-twitter"></i></a> -->
+		<a href="javascript:void(0);" class="visible-phone" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<!-- Header 
+
+	<span class="header-logo">
+
+		<div align=center><img class="logo" src="./images/BrainHack/1x/thumbnail_SOBP-logo.75.png" alt="retro-brain-logo">
+		</div>
+		<div align=center id="register-link"><a
+				href="https://flux.societyconference.com/v2/?m=conf&route=reg-now&conf_id=10002&reg_method=indiv_reg">Register!</a>
+		</div>
+
+	</span> -->
+
+	<!-- First -->
+	<section id="info" class="main">
+		<header>
+			<div class="container">
+				<!--<h2> Why Brainhack ?</h2>
+
+				<p> BrainHacks are collaborative events that focus on the open sharing of ideas, models, code, and data.
+					They bring together brain experts and enthusiasts from a variety of backgrounds to build
+					relationships, learn from one another, and collaborate on projects related to the neurosciences.
+				</p>
+
+				<p>
+					We also encourage new programmers and students/scientists to participate in our hackathon this year.
+					We pair experienced Brain Hackers with new folks to help kickstart your growth as a neurohacker!
+				</p>
+
+				 <p> Join us on <a href="https://discord.gg/HC7fumm79B" target="_blank">Discord</a> to join the community
+					of BrainHack Global Toronto 2023 and start planning your projects! We also have an official
+					<b>#brainhack-toronto</b> channel on <a
+						href="https://mattermost.brainhack.org/brainhack/channels/brainhack-toronto"
+						target="_blank">Mattermost</a>, where you can connect with the BrainHack Global community around
+					the world!
+				</p> -->
+
+				</br>
+				<div>
+					<h2><b>ABCD-ReproNim Hackathon 2025</b></h2>
+					<p>
+					ABCD-ReproNim is pleased to announce a 4-day hackathon on January 20-23, 2026 in Hollywood, Florida. The ABCD-ReproNim Hackathon was designed to promote collaborative analyses of ABCD data using reproducible and responsible methods.  ABCD-ReproNim aims to equip researchers with the tools to improve their data science and computational method repertoire. The ABCD-ReproNim Hackathon will allow attendees to have open time to work in interdisciplinary teams on projects that utilize computational techniques to solve problems of interest to the broader ABCD community.
+					</p>
+					<table>
+						<tr>
+							<td align="left">
+								<b>Dates:</b>
+							</td>
+							<td align="left">
+								January 20-23, 2026
+							</td>
+						</tr>
+
+						<tr>
+							<td align="left">
+								<b>Cost:</b>
+							</td>
+							<td align="left">
+								There is no charge for this event. Individuals interested in attending should submit an application. If selected, we will pay for your travel costs and make all of your travel arrangements. The hackathon includes onsite breakfast and lunch; a stipend will be provided for dinner.
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<b>Location:</b>
+							</td>
+							<td align="left">
+								<a href="https://www.margaritavillehollywoodbeachresort.com/">Margaritaville Resort</a>,
+								<br> 
+								Hollywood, Florida
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<b>Note:</b>
+							</td>
+							<td align="left">We follow <a href="http://www.brainhack.org/code-of-conduct.html">the code
+									of conduct</a> of BrainHack Global.</th>
+						</tr>
+					</table>
+				</div>
+
+				<div id="reg-link"><a
+						href="https://flux.societyconference.com/v2/?m=conf&route=reg-now&conf_id=10002&reg_method=indiv_reg">
+						<b>Register now!</b></a></div>
+
+				<div class="map-responsive">
+
+					<!-- Change z=xx for map zoom-->
+					<!-- <iframe
+						src="https://maps.google.com/maps?q=250%20College%20St%2C%20Toronto%2C%20ON%20M5T%201R8&t=&z=16&ie=UTF8&iwloc=&output=embed"
+						width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4763.961219023315!2d-6.2476465!3d53.3436033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9183082d31%3A0x9d8406292b807797!2sTrinity%20Biomedical%20Sciences%20Institute!5e0!3m2!1sen!2sus!4v1755528603827!5m2!1sen!2sus" 
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</header>
+
+		<!-- Moved Why Brainhack Here -->
+		<div class="content dark style1 featured">
+			<div class="container">
+				<!-- Why Brainhack block -->
+				<header>
+					<h2 style="margin-bottom: 1em;">Why Hack?</h2>
+					<p>
+						Hackathons are collaborative events that focus on the open sharing of ideas, models, code, and data.
+						They bring together brain experts and enthusiasts from a variety of backgrounds to build
+						relationships, learn from one another, and collaborate on projects related to the neurosciences.
+					</p>
+					<p style="margin-top: 1em; margin-bottom: 1.5em;">
+						We also encourage new programmers and students/scientists to participate in our hackathon this year.
+						We pair experienced Brain Hackers with new folks to help kickstart your growth as a neurohacker!
+					</p>
+				</header>
+	
+				<!-- 3 Column Icons -->
+				<div class="row">
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon"><span class="icon fa-graduation-cap"></span></span>
+							<header><h3>Learn</h3></header>
+							<p>Learn about tools, techniques and datasets in neuroimaging research.</p>
+						</section>
+					</div>
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon"><span class="icon fa-comments"></span></span>
+							<header><h3>Be Social</h3></header>
+							<p>Meet researchers from a variety of backgrounds. Share your knowledge.</p>
+						</section>
+					</div>
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon"><span class="icon fa-gears"></span></span>
+							<header><h3>Get Involved</h3></header>
+							<p>Find exciting projects that you would like to contribute to.</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!--<div class="content dark style1 featured">
+			<div class="container">
+				<div class="row">
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon">
+								<span class="icon fa-graduation-cap"></span>
+							</span>
+							<header>
+								<h3>Learn</h3>
+							</header>
+							<p>Learn about tools, techniques and datasets in neuroimaging research.</p>
+						</section>
+					</div>
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon">
+								<span class="icon fa-comments"></span>
+							</span>
+							<header>
+								<h3>Be Social</h3>
+							</header>
+							<p>Meet researchers from a variety of backgrounds. Share your knowledge.</p>
+						</section>
+					</div>
+					<div class="4u 12u(narrow)">
+						<section>
+							<span class="feature-icon">
+								<span class="icon fa-gears"></span>
+							</span>
+							<header>
+								<h3>Get Involved</h3>
+							</header>
+							<p>Find exciting projects that you would like to contribute to.</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- Second -->
+	<section id="schedule" class="main">  <!-- Called Program in TopNav -->
+		<header>
+			<div class="container">
+				<h2>Program & Schedule</h2>
+				<p>
+					This two day event will bring together local scientists and trainees in neuroimaging from
+					institutions across the region.
+					The program will include:
+				</p>
+
+
+				<div class="row">
+					<div class="4u 12u(narrow)">
+						<a href="https://gigascience.biomedcentral.com/articles/10.1186/s13742-016-0121-x"
+							target="_blank" class="image fit">
+							<img src="images/what_is_brainhack.gif" alt="" />
+						</a>
+					</div>
+					<div class="8u 12u(narrow)">
+						<ul class="info">
+							<li class="icon fa-cog">
+								<!-- Update information for better interoperability -->
+								<b>Open Hacking</b> sessions in which attendees will work together on projects of their
+								own design. Attendees are encouraged but not required to bring their own projects into
+								the hackathon to work collaboratively with others. Project inspirations could stem from
+								other projects proposed by attendees, ongoing work you're involved in, or new research
+								areas that you've been waiting to have an opportunity to jump on!
+							</li>
+							<!-- No longer relevant, use TrainTracks -->
+							<li class="icon fa-train"> <b> Unconference & Tutorials </b> to help you get up to speed
+								with
+								various programming languages and current practices in open-source and
+								reproducible neuroimaging analysis.
+							</li>
+							<!-- <li> <i class="fas fa-handshake"></i> <b> Panel and Lunch-time Discussions </b> are
+								social events focusing on open chatter on topics that are not research specific.
+								This year, the panel will focus on "Career trajectories outside academia"
+								for which we invited previous brain scientists to share their career trajectories 
+								in the industry.
+							</li> 
+							<li><i class="icon fa-comment"></i> <b> Social </b> will be held Tuesday evening (May 7th)
+								to foster community building.
+							</li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div style="padding: 1em 0 2em 0">
+				<h3 style="margin-top: 1em; margin-bottom: 1em;">Schedule</h3>
+				  <table border="1" cellspacing="0" cellpadding="8" style="width: 100%; border-collapse: collapse; text-align: left;">
+				    <colgroup>
+				      <col style="width: 15%;">
+				      <col style="width: 35%;">
+				      <col style="width: 15%;">
+				      <col style="width: 35%;">
+				    </colgroup>
+				    <thead style="background-color: #f2f2f2; font-weight: bold;">
+				      <tr>
+				        <th>Time</th>
+				        <th>Mon, Sept 1</th>
+				        <th>Time</th>
+				        <th>Tues, Sept 2</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>09:00 – 09:30</td>
+				        <td>Introduction to Brainhacking</td>
+				        <td>09:00 – 09:30</td>
+				        <td>Project Check In</td>
+				      </tr>
+				      <tr>
+				        <td>09:30 – 10:30</td>
+				        <td>Project Pitches</td>
+				        <td>09:30 – 10:30</td>
+				        <td>UnTutorials and Hacking</td>
+				      </tr>
+				      <tr>
+				        <td>10:30 – 10:45</td>
+				        <td>Coffee Break</td>
+				        <td>10:30 – 10:45</td>
+				        <td>Coffee Break</td>
+				      </tr>
+				      <tr>
+				        <td>10:45 – 11:45</td>
+				        <td>Review of BrainHacking Resources</td>
+				        <td>10:45 – 12:00</td>
+				        <td>UnTutorials and Hacking</td>
+				      </tr>
+				      <tr>
+				        <td>11:45 – 12:00</td>
+				        <td>Group Discussion and Questions</td>
+				        <td></td>
+				        <td></td>
+				      </tr>
+				      <tr>
+				        <td>12:00 – 13:00</td>
+				        <td>Lunch</td>
+				        <td>12:00 – 13:00</td>
+				        <td>Lunch</td>
+				      </tr>
+				      <tr>
+				        <td>13:00 – 15:00</td>
+				        <td>UnTutorials and Hacking</td>
+				        <td>13:00 – 15:00</td>
+				        <td>UnTutorials and Hacking</td>
+				      </tr>
+				      <tr>
+				        <td>15:00 – 15:15</td>
+				        <td>Coffee Break</td>
+				        <td>15:00 – 15:15</td>
+				        <td>Coffee Break</td>
+				      </tr>
+				      <tr>
+				        <td>15:15 – 16:45</td>
+				        <td>Hacking</td>
+				        <td>15:15 – 16:00</td>
+				        <td>Hacking</td>
+				      </tr>
+				      <tr>
+				        <td>16:45 – 17:00</td>
+				        <td>Brief Project Recaps</td>
+				        <td>16:00 – 17:00</td>
+				        <td>Project Reports and Feedback</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
+
+				<div>
+					<h4>View schedule in <a
+							href="https://calendar.google.com/calendar/embed?src=7e039bb81377d27a20bea7052992aa511ac0511d6491d7dfe5d5f794612faf23%40group.calendar.google.com&ctz=America%2FNew_York"><b>Google
+								Calendar</b></a>
+						 or <a
+							href="https://calendar.google.com/calendar/ical/7e039bb81377d27a20bea7052992aa511ac0511d6491d7dfe5d5f794612faf23%40group.calendar.google.com/public/basic.ics"><b>add it to
+								your calendar</b></a>. 
+					</h4>
+					<p>
+					</p>
+				</div>
+
+				<h3 style="margin-top:0.5em;">Program Description</h3>
+				<ul style="line-height: 1.6;">
+				  <li><strong>Introduction to Brainhacking:</strong> Hacking isn't just about code — it can mean creatively solving problems in analysis, experimental design, and more. This session welcomes all backgrounds and highlights how interdisciplinary collaboration fuels innovation.</li>
+				
+				  <li><strong>Project Pitches:</strong> Attendees pitch ideas they’d like to explore, discuss technological or conceptual gaps, and begin forming collaborative teams around shared interests.</li>
+				
+				  <li><strong>Coffee Break:</strong> Time to recharge and chat informally.</li>
+				
+				  <li><strong>Review of BrainHacking Resources:</strong> A brief overview of helpful software, datasets, platforms, and tools. Topics may later become UnTutorial sessions based on attendee interest.</li>
+				
+				  <li><strong>Group Discussion and Questions:</strong> Open Q&A to wrap up the morning and align goals.</li>
+				
+				  <li><strong>UnTutorials and Hacking:</strong> Work time for those with a clear plan, or spontaneous tutorials chosen by attendee interest. Sessions happen only if enough participants express interest.</li>
+				
+				  <li><strong>Free Hacking:</strong> Unstructured time to work on projects, get support, or extend tutorials.</li>
+				
+				  <li><strong>Brief Project Recaps:</strong> Each team shares a quick progress update and sets goals for Day 2.</li>
+				
+				  <li><strong>Project Check In:</strong> Teams provide morning updates — progress, goals, or blockers.</li>
+				
+				  <li><strong>Project Reports and Feedback:</strong> Final reports and reflections on project progress, outcomes, and ideas for future hackathons.</li>
+				</ul>
+
+				<div style="margin: 1em 0;">
+					<a href="assets/data/BrainHack Flux 2025 Program.pdf" target="_blank" class="btn btn-primary">
+					📄 View Full Program
+					</a>
+					<p>
+					</p>
+				</div>
+
+
+		</header>
+	</section>
+
+
+	<section id="projects" class="main">
+		<div class="content dark style2">
+			<div class="container">
+				<div class="row">
+					<div class="8u 12u(narrow)">
+						<section>
+							<h2 style="margin-bottom: 1em;">Project Pitches</h2>
+							<p>
+								Open hacking projects are a great forum for getting support on a technical issue from
+								your own research program or starting
+								a new collaborative project. Check out our full
+
+								<a href="https://docs.google.com/document/d/1cCbfn8Edo-n0cJzNQb5fh1cN95w5dKHuum_7xeaZAL4/edit?usp=sharing" target="_blank">project listing</a>
+								or
+								<a href="https://docs.google.com/spreadsheets/d/1wJFPSoL-71qLafR7EpUmjwfdLbkZOLKGsjLNuS1JhT4/edit?usp=sharing"
+									target="_blank">suggest your own</a>.
+							</p>
+						</section>
+					</div>
+					<div class="4u 12u(narrow)">
+						<a href="https://docs.google.com/spreadsheets/d/1wJFPSoL-71qLafR7EpUmjwfdLbkZOLKGsjLNuS1JhT4/edit?usp=sharing"
+							target="_blank">
+							<span class="feature-icon">
+								<span class="icon fa-clipboard"></span>
+							</span>
+							<h4>Suggest a Project</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="main">
+		<header>
+			<div class="row" id="team">
+				<div class="12u 12u(narrow)">
+					<h2 style="text-align: center;">Meet the Organizers</h2>
+				</div>
+			</div>
+		</header>
+	
+		<div class="subcomittee-container">
+	
+			<div class="flex-item">
+				<img src="./images/committee/angela-laird.jpg" alt="Angela R. Laird">
+				<div class="description-text">
+					<div>Angela R. Laird</div>
+					<div><i>FIU</i></div>
+					<div>
+						<a href="https://github.com/angielaird"><i class="icon fa-github"></i></a>
+						<a href="https://x.com/phyzang"><i class="icon fa-twitter"></i></a>
+						<a href="https://nbclab.github.io/"><i class="icon fa-external-link"></i></a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="flex-item">
+				<img src="./images/committee/dnk_abcd.jpg" alt="David N. Kennedy">
+				<div class="description-text">
+					<div>David N. Kennedy</div>
+					<div><i>UMass Chan Medical School</i></div>
+					<div>
+						<a href="https://profiles.umassmed.edu/display/130002"><i class="icon fa-external-link"></i></a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="flex-item">
+				<img src="./images/committee/katherine-bottenhorn.jpeg" alt="Katherine L. Bottenhorn">
+				<div class="description-text">
+					<div>Katherine L. Bottenhorn</div>
+					<div><i>FIU</i></div>
+					<div>
+						<a href="https://github.com/62442katieb"><i class="icon fa-github"></i></a>
+						<a href="https://62442katieb.github.io/"><i class="icon fa-external-link"></i></a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="flex-item">
+				<img src="./images/committee/chloe-hampson.jpeg" alt="Chloe L. Hampson">
+				<div class="description-text">
+					<div>Chloe L. Hampson</div>
+					<div><i>FIU</i></div>
+					<div>
+						<a href="https://github.com/chlohamp"><i class="icon fa-github"></i></a>
+						<a href="https://x.com/hampson_chloe"><i class="icon fa-twitter"></i></a>
+						<a href="https://nbclab.github.io/team/hampson-chloe"><i class="icon fa-external-link"></i></a>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</section>
+
+
+				
+
+	<!-- Footer -->
+	<section id="footer" class="main">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="12u 12u(narrow)">
+						<h2 style="text-align: center;">Contact Us</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u 12u(narrow)">
+						<ul class="icons" style="text-align: center; list-style: none; padding-left: 0;">
+							<li style="display: inline-block; margin: 0 1em;">
+								<a href="mailto:fluxhackinfo@repronim.org" target="_blank" class="icon fa-envelope">
+									<span class="label">Email</span>
+								</a> Email
+							</li>
+							<!--
+							<li style="display: inline-block; margin: 0 1em;">
+								<a href="https://discord.gg/HC7fumm79B" target="_blank" class="icon fa-comment">
+									<span class="label">Discord</span>
+								</a> Discord
+							</li>
+							<li style="display: inline-block; margin: 0 1em;">
+								<a href="https://twitter.com/brainhackto" target="_blank" class="icon fa-twitter">
+									<span class="label">Twitter</span>
+								</a> Twitter
+							</li>
+							-->
+							<li style="display: inline-block; margin: 0 1em;">
+								<a href="https://github.com/chlohamp/FLUXHack-092025" target="_blank" class="icon fa-github">
+									<span class="label">GitHub</span>
+								</a> GitHub
+							</li>
+							<li style="display: inline-block; margin: 0 1em;">
+								<a href="http://www.brainhack.org/code-of-conduct.html" target="_blank" class="icon fa-child">
+									<span class="label">Code of Conduct</span>
+								</a> Code of Conduct
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="12u 12u(narrow)">
+						<div class="copyright" style="text-align: center;">
+							<ul class="menu" style="display: inline-block; text-align: left; padding-left: 0;">
+								<li>&copy; 2018 Brainhack MTL.</li>
+								<li>Design:
+									<a href="http://html5up.net">HTML5 UP</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</section>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Script for writing into divs worklife-text -->
+	<script>
+		// Get relevant elements
+		var worklife_boxes = Array.from(document.getElementsByClassName("worklife-box"))
+		// This function will write into a div
+		function displayWorklife(evt) {
+			var person = evt.currentTarget.person;
+			var job = evt.currentTarget.job;
+			var bio = evt.currentTarget.bio;
+			console.log(evt.currentTarget);
+			console.log(person);
+			console.log(job);
+			console.log(bio);
+			// Fill in
+			$("#worklife-person").fadeOut(function (evt) {
+				$(this).text(person).fadeIn();
+			});
+			$("#worklife-job").fadeOut(function (evt) {
+				$(this).text(job).fadeIn();
+			});
+			$("#worklife-bio").fadeOut(function (evt) {
+				$(this).text(bio).fadeIn();
+			});
+		}
+		// Read JSON object
+		$.getJSON("assets/data/worklife.json", function (data) {
+			// For each worklife-box assign an event listener
+			worklife_boxes.map((obj, ind) => {
+				console.log(obj)
+				console.log(ind)
+				obj.person = data[ind].person
+				obj.job = data[ind].job
+				obj.bio = data[ind].bio
+				obj.addEventListener("mouseover", displayWorklife)
+			});
+		});
+	</script>
+
+	<!-- Script for writing into divs worklife-text -->
+	<script>
+		// Get relevant elements
+		var era_boxes = Array.from(document.getElementsByClassName("era-box"))
+		// This function will write into a div
+		function displayEra(evt) {
+			var person = evt.currentTarget.person;
+			var job = evt.currentTarget.job;
+			var bio = evt.currentTarget.bio;
+			console.log(evt.currentTarget);
+			console.log(person);
+			console.log(job);
+			console.log(bio);
+			// Fill in
+			$("#era-person").fadeOut(function (evt) {
+				$(this).text(person).fadeIn();
+			});
+			$("#era-job").fadeOut(function (evt) {
+				$(this).text(job).fadeIn();
+			});
+			$("#era-bio").fadeOut(function (evt) {
+				$(this).text(bio).fadeIn();
+			});
+		}
+		// Read JSON object
+		$.getJSON("assets/data/era.json", function (data) {
+			// For each worklife-box assign an event listener
+			era_boxes.map((obj, ind) => {
+				console.log(obj)
+				console.log(ind)
+				obj.person = data[ind].person
+				obj.job = data[ind].job
+				obj.bio = data[ind].bio
+				obj.addEventListener("mouseover", displayEra)
+			});
+		});
+	</script>
+
+	<!-- Script for writing into divs career-text -->
+	<script>
+		// Get relevant elements
+		var career_boxes = Array.from(document.getElementsByClassName("career-box"))
+		// This function will write into a div
+		function displayCareer(evt) {
+			var person = evt.currentTarget.person;
+			var job = evt.currentTarget.job;
+			var bio = evt.currentTarget.bio;
+			$("#career-person").fadeOut(function (evt) {
+				$(this).text(person).fadeIn();
+			});
+			$("#career-job").fadeOut(function (evt) {
+				$(this).text(job).fadeIn();
+			});
+			$("#career-bio").fadeOut(function (evt) {
+				$(this).text(bio).fadeIn();
+			});
+		}
+		// Read JSON object
+		$.getJSON("assets/data/career.json", function (data) {
+			// For each career-box assign an event listener
+			career_boxes.map((obj, ind) => {
+				obj.person = data[ind].person
+				obj.job = data[ind].job
+				obj.bio = data[ind].bio
+				obj.addEventListener("mouseover", displayCareer)
+			});
+		});
+	</script>
+
+
+	<!-- Script for writing into divs career-text -->
+	<script>
+		// Get relevant elements
+		var mri_boxes = Array.from(document.getElementsByClassName("mri-box"))
+		// This function will write into a div
+		function displayMri(evt) {
+			var person = evt.currentTarget.person;
+			var job = evt.currentTarget.job;
+			var bio = evt.currentTarget.bio;
+			$("#mri-person").fadeOut(function (evt) {
+				$(this).text(person).fadeIn();
+			});
+			$("#mri-job").fadeOut(function (evt) {
+				$(this).text(job).fadeIn();
+			});
+			$("#mri-bio").fadeOut(function (evt) {
+				$(this).text(bio).fadeIn();
+			});
+		}
+		// Read JSON object
+		$.getJSON("assets/data/mri.json", function (data) {
+			// For each mri-box assign an event listener
+			mri_boxes.map((obj, ind) => {
+				obj.person = data[ind].person
+				obj.job = data[ind].job
+				obj.bio = data[ind].bio
+				obj.addEventListener("mouseover", displayMri)
+			});
+		});
+	</script>
+</body>
+
+</html>
