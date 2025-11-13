@@ -1,1 +1,1 @@
-Official Site Repo of FLUX BrainHack - 2025
+Official Site Repo of 2025 ABCD-ReproNim Hackathon. 
