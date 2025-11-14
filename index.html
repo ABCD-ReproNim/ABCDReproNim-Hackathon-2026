@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>ABCD-ReproNim Hackathon 2025</title>
+	<title>ABCD-ReproNim Hackathon 2026</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
@@ -23,20 +23,35 @@
 	<style>
 		/* Top navigation styling */
 		.topnav {
-			background-color: #151830;
+			background-color: #151830 !important;
 			border-bottom: 3px solid white;
 			box-shadow: 0 3px 0 0 white;
+			overflow: hidden !important;
+			position: fixed !important;
+			top: 0 !important;
+			width: 100% !important;
+			z-index: 1000 !important;
 		}
 		.topnav a {
-			color: white;
+			color: white !important;
+			float: left;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
 		}
 		.topnav a:hover {
-			background-color: rgba(255, 255, 255, 0.1);
-			color: white;
+			background-color: rgba(255, 255, 255, 0.1) !important;
+			color: white !important;
 		}
 		.topnav a.active {
-			background-color: rgba(255, 255, 255, 0.2);
-			color: white;
+			background-color: rgba(255, 255, 255, 0.2) !important;
+			color: white !important;
+		}
+		
+		/* Adjust body to account for fixed navigation */
+		body {
+			margin-top: 60px !important;
 		}
 		
 		/* Make Apply Now button larger and more prominent */
@@ -230,7 +245,7 @@
 <body>
 
 	<div class="topnav" id="myTopnav">
-		<a href="#info">ABCD-ReproNim Hackathon 2025</a>
+		<a href="#info">ABCD-ReproNim Hackathon 2026</a>
 		<!-- <a href="https://brainhack.org/global2023/">Brainhack Global 2023</a> -->
 		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeXC1A7RFEgUq4hG106cA-IaKNpsvd4P0BQ-tEwSEsyuyATPw/viewform?usp=sharing&ouid=115636153886598447704"><b>Apply Now</b></a>
 		<a href="#schedule">Program & Schedule</a>
@@ -286,7 +301,7 @@
 				</br>
 				<div class="abcd-title-section">
 					<div class="abcd-title-content">
-						<h2><b>ABCD-ReproNim Hackathon 2025</b></h2>
+						<h2><b>ABCD-ReproNim Hackathon 2026</b></h2>
 					</div>
 				</div>
 				<div>
@@ -302,7 +317,15 @@
 								January 20-23, 2026
 							</td>
 						</tr>
-
+						<tr>
+							<td align="left">
+								<b>Who:</b>
+							</td>
+							<td align="left">
+								We are inviting researchers with interests in the ABCD Study to attend this event and contribute to ABCD data analysis projects. Collaborative analysis teams will include individuals with a range of skills, from novice trainees to expert data analysts. Students, postdoctoral fellows, staff, and faculty are all invited to apply.
+							</td>
+						</tr>
+						<tr>
 						<tr>
 							<td align="left">
 								<b>Cost:</b>
@@ -771,7 +794,27 @@
 					</div>
 				</div>
 			</div>
-	
+			<div class="flex-item">
+				<img src="./images/committee/wes-thompson.png" alt="Wes Thompson">
+				<div class="description-text">
+					<div>Wes Thompson</div>
+					<div><i>Laureate Institute for Brain Research</i></div>
+					<div>
+						<a href="https://x.com/WesThom92042858"><i class="icon fa-twitter"></i></a>
+						<a href="https://www.laureateinstitute.org/wesley-thompson.html"><i class="icon fa-external-link"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item">
+				<img src="./images/committee/carlos-cardenas-iniguez.png" alt="Carlos Cardenas-Iniguez">
+				<div class="description-text">
+					<div>Carlos Cardenas-Iniguez</div>
+					<div><i>University of Southern California</i></div>
+					<div>
+						<a href="https://x.com/kharloews"><i class="icon fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>				
 		</div>
 	</section>
 
