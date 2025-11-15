@@ -134,12 +134,29 @@
 		
 		/* Schedule tables styling */
 		.schedule-container {
-			background-color: #618E98;
+			background-image: url('images/marg-beach-sunset.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
 			padding: 1em;
 			border-radius: 4px;
 			margin-top: 1em;
 		}
+		.schedule-container::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.8);
+			border-radius: 4px;
+			z-index: 1;
+		}
 		.schedule-container table {
+			position: relative;
+			z-index: 2;
 			border-color: white;
 		}
 		.schedule-container th,
@@ -149,13 +166,6 @@
 		}
 		.schedule-container thead {
 			background-color: rgba(255, 255, 255, 0.3);
-		}
-		.schedule-container th {
-			background-color: rgba(255, 255, 255, 0.25);
-			color: white;
-			font-weight: bold;
-			padding: 0.8em;
-			text-align: center;
 		}
 		.schedule-container th {
 			background-color: rgba(255, 255, 255, 0.25);
